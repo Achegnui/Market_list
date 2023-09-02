@@ -2,55 +2,67 @@
   --main-color: rgb(99, 99, 239);
 }
 
-// body{
-//     // background-image: url(grocery.jpg);
-//     //background-color: red;
-// }
-
 div {
-  // background-image: url(tomat.jpg);
-  // background-size: ;
   width: 50%;
   padding-left: 0.7em;
   padding-right: 0.7em;
   padding-bottom: 0.7em;
   border-radius: 0.5em;
   background-color: darkcyan;
-
-  label {
-    font-weight: bold;
-    font-family: Candara Bold;
-    color: aliceblue;
-  }
-
-  input {
-    margin-bottom: 1.5em;
-    // border: none;
-    padding: 1.5em;
-    background: rgb(255, 222, 222);
-    border-radius: 0.4em;
-  }
-  h1 {
-    color: aliceblue;
-  }
-  .add {
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    font-size: 1em;
-    //border: none;
-    border-color: black;
-    margin-bottom: 1em;
-    border-radius: 5em;
-    display: inline-block;
-    padding: 0.8em 1em;
-    width: unset;
-    cursor: pointer;
-  }
 }
+
+div label {
+  font-weight: bold;
+  font-family: Candara Bold;
+  color: aliceblue;
+}
+
+div input {
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  background: rgb(255, 222, 222);
+  border-radius: 0.4em;
+}
+
+div h1 {
+  color: aliceblue;
+}
+
+div .add {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+  border-color: black;
+  margin-bottom: 1em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 1em;
+  width: unset;
+  cursor: pointer;
+}
+
 .field {
   margin-bottom: 3em;
 }
+
 .output {
   color: aliceblue;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  div {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div {
+    width: 100%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+  }
 }
