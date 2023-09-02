@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="market_list.css">
+        <title>List</title>
+    </head>
+
+    <body>
+        <center>
+            
+            <div class="field">
+                <h1>List</h1>
+                   <label for="item">Item:</label> <br>
+                    <input type="text" id="item" /><br><br>
+                    <label for="price">Price:</label> <br>
+                    <input type="number" id="price" /><br><br>
+                    <button id="addBtn" class="add">Add Item</button> 
+            </div>
+
+
+            <div class="output">
+                <h2>Items:</h2>
+                <table id="itemTable">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th id="price">Price</th>
+                            <th>action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemTableBody"></tbody>
+                    <tfoot>
+                        <td>Total: </td>
+                        <td id="total">0 FCFA</td>
+                    </tfoot>
+                </table>
+            <!-- </div> -->
+
+        </center>
+
+        <script src="market_list.js"></script>
+    </body>
+
+</html>
